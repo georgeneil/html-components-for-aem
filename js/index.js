@@ -8,7 +8,7 @@
         function init() {
             this.name = 'Main';
 
-            this.dd1 = document.querySelector('#dd-1 .dropdown');
+            this.dd1 = document.querySelector('#dd-1 .ss-dropdown');
             new def.SingleDropDown(this.dd1);
         };
 
