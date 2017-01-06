@@ -1,0 +1,24 @@
+-->
+<div class="dropdown cursor-pointer">
+    <div class="dropdown-header">
+        <h2 class="dropdown-measure text-style-44">
+            <span class="title">@@title</span>
+            <span class="arrow"></span>
+        </h2>
+        <div class="dropdown-selected truncate text-style-46">
+            <!-- @@for(var i = 0; i < 1; i++) { -->
+            `+items[i].label+`
+            <!-- } -->
+        </div>
+    </div>
+    <div class="dropdown-content-wrapper">
+        <ul class="dropdown-content">
+            <!-- @@for(var i = 0, s="selected" ; i < items.length; i++, s='' ) { -->
+            <li class="text-style-46 dropdown-item `+s+`" data-item="`+items[i].value+`">
+                `+items[i].label+`
+            </li>
+            <!-- } -->
+        </ul>
+    </div>
+</div>
+<!-- End of single Dropdown
