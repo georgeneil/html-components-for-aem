@@ -4,12 +4,16 @@ $black: #000000;
 $white: #FFFFFF;
 $transparent: transparent;
 $azure: #998ff9;
+$greyish-brown-one: #2a2a2a;
 $greyish-brown: #363636;
 $warm-grey-two:#6c6c6c;
+
+/* variables */
 $primary-color: $white !default;
 $secondary-color: $greyish-brown !default;
 $color-h2: $secondary-color !default;
-$color-ts-46: $greyish-brown;
+$color-ts-1: $greyish-brown-one;
+$color-ts-2: $greyish-brown;
 $dropdown-item-selected-blue: $azure;
 $dropdown-item-selected-background: $azure;
 $dropdown-item-selected-color: $primary-color;
@@ -17,6 +21,8 @@ $dropdown-selected-text-color: $warm-grey-two;
 $dropdown-background: $transparent;
 $dropdown-open-background: $primary-color;
 $small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
 $small-and-down: 'only screen and (max-width : #{$small-screen})' !default;
 $font-weight-ultra-light: 100;
 $font-weight-light: 300;
@@ -24,20 +30,61 @@ $font-weight-regular: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 900;
-.text-style-46 {
+
+/* html */
+html {
+    line-height: 1.5;
+    @media only screen and (min-width: 0) {
+        font-size: 15px;
+    }
+    @media only screen and (min-width: $medium-screen) {
+        font-size: 15.5px;
+    }
+    @media only screen and (min-width: $large-screen) {
+        font-size: 16px;
+    }
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+}
+
+/* text-styles */
+.text-style-1 {
+    font-size: 1.875rem; // 30px
+    line-height: 1.07; //32px
+    font-weight: $font-weight-regular;
+    text-align: center;
+    color: $color-ts-1;
+    @media #{$small-and-down} {
+        font-size: 1.133rem; //17px
+        line-height: 1; //17px
+    }
+}
+
+.text-style-2 {
     font-size: 1.438rem; // 23px
     font-weight: $font-weight-light;
-    color: $color-ts-46;
+    color: $color-ts-2;
     @media #{$small-and-down} {
         font-size: 1.133rem; //17px
     }
 }
 
-.cursor-pointer {
+.pointer {
     text-decoration: none;
     cursor: pointer;
 }
 
+/* resets */
+
+body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.45em 0;
+}
 
 /* box-shadow-levels */
 
@@ -109,13 +156,6 @@ $font-weight-black: 900;
     height: auto;
 }
 
-
-/* dropdown-content */
-
-.dropdown-content {
-    margin: 0;
-    padding: 0;
-}
 
 
 /* dropdown-item */
