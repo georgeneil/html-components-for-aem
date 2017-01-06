@@ -1,0 +1,66 @@
+/* html */
+html {
+    line-height: 1.5;
+    @media only screen and (min-width: 0) {
+        font-size: 15px;
+    }
+    @media only screen and (min-width: $medium-screen) {
+        font-size: 15.5px;
+    }
+    @media only screen and (min-width: $large-screen) {
+        font-size: 16px;
+    }
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    -webkit-user-drag: none;
+    background-color: $light-green;
+}
+
+/* text-styles */
+.text-style-1 {
+    font-size: 1.875rem; // 30px
+    line-height: 1.07; //32px
+    font-weight: $font-weight-regular;
+    text-align: center;
+    color: $color-ts-1;
+    @media #{$small-and-down} {
+        font-size: 1.133rem; //17px
+        line-height: 1; //17px
+    }
+}
+
+.text-style-2 {
+    font-size: 1.438rem; // 23px
+    font-weight: $font-weight-light;
+    color: $color-ts-2;
+    @media #{$small-and-down} {
+        font-size: 1.133rem; //17px
+    }
+}
+
+.pointer {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* resets */
+
+body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.45em 0;
+}
+
+/* box-shadow-levels */
+
+.bs-depth-3 {
+    box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.18);
+}

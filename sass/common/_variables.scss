@@ -1,0 +1,33 @@
+/* colors */
+
+$black: #000000;
+$white: #FFFFFF;
+$transparent: transparent;
+$azure: #998ff9;
+$greyish-brown-one: #2a2a2a;
+$greyish-brown: #363636;
+$warm-grey-two:#6c6c6c;
+$light-green: #cfefd2;
+
+/* variables */
+$primary-color: $white;
+$secondary-color: $greyish-brown;
+$color-h2: $secondary-color;
+$color-ts-1: $greyish-brown-one;
+$color-ts-2: $greyish-brown;
+$dropdown-item-selected-blue: $azure;
+$dropdown-item-selected-background: $azure;
+$dropdown-item-selected-color: $primary-color;
+$dropdown-selected-text-color: $warm-grey-two;
+$dropdown-background: $transparent;
+$dropdown-open-background: $primary-color;
+$small-screen: 600px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+$small-and-down: 'only screen and (max-width : #{$small-screen})';
+$font-weight-ultra-light: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
