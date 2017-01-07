@@ -27,7 +27,6 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('fileinclude', function () {
-  gutil.log("FI");
   gulp.src(['./html/pages/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
