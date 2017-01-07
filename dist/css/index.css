@@ -1,0 +1,110 @@
+/* colors */
+/* variables */
+/* colors */
+/* variables */
+/* ss-dropdown */
+.ss-dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  transition: box-shadow 1s;
+  will-change: box-shadow;
+  background: transparent; }
+
+.ss-dropdown.open {
+  background: #FFFFFF; }
+
+/* dropdown-measure */
+.dropdown-measure {
+  padding-top: 27px; }
+
+/* title */
+.dropdown-measure .title {
+  padding-right: 16px; }
+  @media only screen and (max-width: 600px) {
+    .dropdown-measure .title {
+      font-weight: 600;
+      line-height: 1.53;
+      color: #363636; } }
+
+/* dropdown-selected */
+.dropdown-selected {
+  color: #6c6c6c; }
+
+.ss-dropdown.open .dropdown-selected {
+  display: none; }
+
+/* dropdown-content-wrapper */
+.dropdown-content-wrapper {
+  position: relative;
+  height: 0;
+  transition: height 0.5s;
+  will-change: height;
+  overflow: hidden;
+  background: #FFFFFF; }
+
+.ss-dropdown.open .dropdown-content-wrapper {
+  height: auto; }
+
+/* dropdown-item */
+.dropdown-item {
+  line-height: 40px;
+  box-sizing: border-box;
+  list-style: none; }
+
+.dropdown-item.selected {
+  background-color: #998ff9;
+  color: #FFFFFF;
+  font-weight: 600; }
+
+/* turn-arrow */
+.turn-arrow {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  transition: 0.4s ease;
+  text-align: left; }
+  @media only screen and (max-width: 600px) {
+    .turn-arrow {
+      bottom: 0; } }
+
+.turn-arrow:before,
+.turn-arrow:after {
+  background-color: transparent;
+  width: 1px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  border-bottom: 13px solid #7B7B7B;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease; }
+
+.turn-arrow:before {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+.turn-arrow:after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.open .turn-arrow {
+  -webkit-transform: translate(0, -6px);
+  transform: translate(0, -6px); }
+
+.open .turn-arrow:before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.open .turn-arrow:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#dd-1 {
+  margin-top: 50px; }
