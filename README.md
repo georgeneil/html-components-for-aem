@@ -1,11 +1,18 @@
 # html-components-for-aem
 HTML components compatible for Adobe Experience Manager(aem) based website development.  
-The HTML components for AEM, should be some thing like defined once and can be used at multiple places.  
-This approach help for better maintainability of the components from an AEM percpective.  
-There should be a provision to pass data to the components.  
-The [gulp-file-include](https://www.npmjs.com/package/gulp-file-include) is used to implement this requirement.  
 
-## Components available
+## About
+This project is about the definition and development of HTML components which are compatible for AEM based website development.
+
+* The HTML components for AEM, should be some thing like defined once and can be used at multiple places.  
+* This approach help for better maintainability of the components from an AEM percpective.  
+* There should be a provision to pass data to the components.  
+* The [gulp-file-include](https://www.npmjs.com/package/gulp-file-include) is used to implement this requirement.  
+
+## Demo
+[See Demo Here](https://georgeneil.github.io/html-components-for-aem/)
+
+## Components
 1. Single Select Drop Down  
 
 ### Definition
