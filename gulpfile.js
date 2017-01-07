@@ -27,7 +27,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('fileinclude', function () {
-  gulp.src(['./html/pages/*.html'])
+  gulp.src(['./html/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: 'html/components/'
